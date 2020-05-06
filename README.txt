@@ -1,3 +1,5 @@
+### Scritp para python 2.7 - testado no ubuntu 19.10 64bits
+
 scriptLattes
 ------------
 
