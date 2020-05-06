@@ -1,0 +1,18 @@
+para baixar o graphviz - talvez nao precise disso. Tentar rodar os comandos, se nao der certo, baixar este e instalar!
+https://packages.ubuntu.com/search?keywords=graphviz&searchon=names
+
+sudo python scriptLattes.py exemplo/teste-03.config
+
+rodar o requeriments.txt
+
+sudo apt-get install python-tidylib
+pip install pytidylib
+sudo apt install graphviz-dev
+pip install graphviz
+
+para substituir a PIL
+pip install Pillow
+
+
+
+

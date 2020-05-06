@@ -1,0 +1,19 @@
+{
+"nodes":[
+{ "name":"David Correa Martins Junior", "idlattes":"1228255861618623", "rotulo":"Professor", "collaborationrank":0.836087346077 },
+{ "name":"Jesus Pascual Mena Chalco", "idlattes":"4727357182510680", "rotulo":"Professor", "collaborationrank":1.96039450169 },
+{ "name":"Andrea Britto Mattos", "idlattes":"2837012019824386", "rotulo":"Colaborador", "collaborationrank":0.347054898739 },
+{ "name":"Fabricio Martins Lopes", "idlattes":"1660070580824436", "rotulo":"Colaborador", "collaborationrank":1.16156589985 },
+{ "name":"Antonio de Abreu Batista Junior", "idlattes":"8874849216659304", "rotulo":"Aluno", "collaborationrank":0.15000000596 },
+{ "name":"Luciano Rossi", "idlattes":"4231401119207209", "rotulo":"Aluno", "collaborationrank":1.1518599987 },
+{ "name":"Rafael Jeferson Pezzuto Damaceno", "idlattes":"2552938367742788", "rotulo":"Aluno", "collaborationrank":0.543037354946 }
+],
+"links":[
+{ "source":0, "target":3, "value":7.0 },
+{ "source":1, "target":2, "value":2.0 },
+{ "source":1, "target":3, "value":3.0 },
+{ "source":1, "target":5, "value":10.0 },
+{ "source":1, "target":6, "value":4.0 },
+{ "source":5, "target":6, "value":2.0 }
+]
+}

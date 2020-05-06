@@ -1,0 +1,387 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Teste 02</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Teste 02</h2></div>
+                
+        <script type="text/javascript" src="./jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({subtitle: {text: ''}, 
+title: {text: 'Total de participação em eventos'}, 
+series: [{data: [[2002,
+2],
+[2003,
+3],
+[2004,
+3],
+[2005,
+6],
+[2006,
+7],
+[2007,
+2],
+[2008,
+6],
+[2009,
+14],
+[2010,
+15],
+[2011,
+10],
+[2012,
+6],
+[2013,
+5],
+[2014,
+6],
+[2015,
+3],
+[2016,
+3],
+[2017,
+10],
+[2018,
+2]], 
+name: 'Total'}], 
+yAxis: {labels: {overflow: 'justify'}, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}, 
+min: 0}, 
+chart: {type: 'column', 
+height: 300}, 
+tooltip: {pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+valueSuffix: '', 
+enabled: true}, 
+credits: {enabled: false}, 
+plotOptions: {column: {stacking: null}, 
+series: {shadow: 'true'}, 
+bar: {dataLabels: {enabled: false}}}, 
+xAxis: {type: 'category', 
+title: {text: ''}}, 
+legend: {layout: 'vertical', 
+align: 'right', 
+enabled: false, 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+verticalAlign: 'middle', 
+shadow: true}});
+        });
+        </script>
+        
+                <h3>Total de participação em eventos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 103<br>
+                    
+                    
+                    <div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Forum da Pós-Graduação em Ciência da Computação - CSBC. 2018. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>IV Workshop de Biotecnologia.Inferência de Redes Gênicas a partir da Integração de Informações Estruturais e Funcionais. 2018. (Oficina).</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>1º Encontro Paulista de Pós-Graduandos em Computação. 2017. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>2nd Brazilian Computer Science Graduate Seminar. 2017. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AB3C X-Meeting. Evaluation of WGCNA and NERI methods for prioritization of pathways associated to schizophrenia spectrum disorders. 2017. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>AB3C X-Meeting. GeNICE: A Novel Framework for Gene Network Inference by Clustering, Exhaustive Search, and Multivariate Analysis. 2017. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Forum da Pós-Graduação em Ciência da Computação - CSBC. 2017. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Workshop de Bioinformática da UTFPR.Inferência de redes de interação gênica e busca por biomarcadores de doenças complexas via análise de redes complexas e integração de dados. 2017. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Workshop de eScience.Gene interaction networks inference and search for complex disease biomarkers by complex networks analysis and data integration. 2017. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>WSCAD.A Hybrid CPU-GPU-MIC Algorithm for the Hitting Set Problem. 2017. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>X-Meeting 2017 - 13th International Conference of the Brazilian Association of Bioinformatics and Computational Biology (AB3C). Poster evaluator at the X-meeting 2017. 2017. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>XVII Semana Acadêmica da Biomedicina Metodista.Bioinformática. 2017. (Simpósio).</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>25th International Joint Conference on Artificial Intelligence - Advances in Bioinformatics and Artificial Intelligence: Bridiging the Gap.A Framework for Scalable Inference of Temporal Gene Regulatory Networks based on Clustering and Multivariate Analysis. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FAPESP Week Michigan-Ohio.Gene interaction networks inference and search for complex disease biomarkers by complex networks analysis and data integration. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>X-Meeting 2016 - 12th International Conference of the Brazilian Association of Bioinformatics and Computational Biology (AB3C)3C). Oral and poster presentations evaluator. 2016. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>4th China-Brazil Conference on Scientific Computing. Gene regulatory networks inference by feature selection. 2015. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Seminário de Acompanhamento de Meio Termo SNPG - CAPES.Coordenador do Programa de Mestrado em Bioinformática - UTFPR. 2015. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>XX Iberoamerican Congress on Pattern Recognition (CIARP). A computer vision approach for automatic measurement of the inter-plant spacing. 2015. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>10th IEEE International Conference on e-Science. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>14th IEEE International Conference of Bioinformatics and Bioengineering (BIBE 2014). Gene networks inference through one genetic algorithm per gene. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>International Conference on Multimedia Retrieval - ICMR. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>International Workshop on Environmental Multimedia Retrieval - EMR. 2014. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>The Web for All Conference - W4A. 2014. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>World Wide Web Conference - WWW. 2014. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Genomics in the Clinic Conference Series. 2013. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>I Simpósio da Pós-Graduação da Universidade Federal do ABC.Inferência de redes gênicas por métodos de seleção de características. 2013. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Intercâmbio Indo-Brasileiro com o Indian Institute of Technology.Inference of gene regulatory networks by feature selection. 2013. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Latin America eScience Workshop. 2013. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Latin American eScience Workshop "Turning Data into Insight". 2013. (Oficina).</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>2nd IEEE International Conference on Computational Advances in Bio and Medical Sciences (ICCABS). Accelerating Gene Regulatory Networks Inference through GPU/CUDA Programming. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>2o. Encontro Paranaense de Melhoramento de Plantas (EPMP).A Bioinformática aplicada no melhoramento de plantas. 2012. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>3o. CURSO DE TÓPICOS EM BIOLOGIA COMPUTACIONAL.Reconhecimento de Padrões e Inferência de Redes Gênicas. 2012. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Computational Processing of the Portuguese Language - PROPOR. 2012. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>VI Curso de Verão em Bioinformática - Programa Interunidades em Bioinformática - USP.Reconhecimento de Padrões Aplicado à Bioinformática. 2012. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>XXXII Congresso da Sociedade Brasileira de Computação. Caracterizando as redes de coautoria de currículos Lattes. 2012. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>2o. CURSO DE TÓPICOS EM BIOLOGIA COMPUTACIONAL.Inferência de GRNs a partir de dados de expressão gênica. 2011. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bioinformatics to understand studies in genomics course. 2011. (Outra).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bioinformática e as Perspectivas para a Próxima Década.Integração de conhecimento biológico em métodos computacionais para inferência de redes regulatórias de expressão gênica (GRN). 2011. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>III Seminário Internacional Ferramentas de Inteligência Competitiva.Análise de dados acadêmicos da plataforma Lattes por meio do scriptLattes. 2011. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Microsoft Research Faculty Summit - Latin American Faculty Summit. 2011. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Microsoft Research-FAPESP Institute Workshop: Revisiting the Past and Planning the Future. 2011. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MidSouth Computational Biology and Bioinformatics Society Conference (MCBIOS). 2011. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Seminars of the CSCR and MIU.Inference of gene regulatory networks from time series by Tsallis entropy. 2011. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>V Curso de Verão em Bioinformática - Programa Interunidades em Bioinformática - USP.Introdução ao Reconhecimento de Padrões e aplicações em problemas de Bioinformática. 2011. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>XXIV Sibgrapi (Conference on Graphics, Patterns and Images). 2011. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>15th Iberoamerican Congress on Pattern Recognition (CIARP). 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>2do Encontro Brasileiro de bibliometria e cientometria.scriptLattes: extração e visualização de conhecimento a partir de CV-Lattes (Sessão Técnica). 2010. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>5th IAPR International Conference on Pattern Recognition in Bioinformatics. SFFS-MR: A Floating Search Strategy for GRNs Inference. 2010. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BIOEN FAPESP Workshop on Synthetic Biology. 2010. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>I Workshop de Bioinformática da Universidade de São Paulo.Inference of gene regulatory networks from time series by Tsallis entropies. 2010. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>II Seminários Avançados em Tecnologia de Microarrays e Next Generation Sequencing - Hospital Israelita Albert Einstein. 2010. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Intercâmbio Indo-Brasileiro com o Indian Statistical Institute.Gene Regulatory Networks Inference. 2010. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>IV Curso de Verão em Bioinformática - Programa Interunidades em Bioinformática - USP.Inferência de Redes Gênicas usando a Entropia de Tsallis. 2010. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>IV Simposio de Computación Gráfica y Procesamiento de Imágenes (SCGI2010).Caricaturização de rostros en 3D: un abordaje basado en proporciones faciales. 2010. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Latin American Faculty Summit 2010 - Microsoft Research. 2010. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Seminarios de Raios Cósmicos e Cronologia do Instituto de Física Gleb Wataghin.Sumarização de dados cientificos de currículos Lattes mediante scriptLattes. 2010. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Seminário de apresentação do scriptLattes para a Pró-Reitoria de pesquisa da UFABC.Ferramenta scriptLattes. 2010. (Outra).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Workshop in Bioinformatics and Algorithms (WBA). 2010. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Workshop in Bioinformatics and Algorithms. 2010. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>XXIII Sibgrapi (Conference on Graphics, Patterns and Images). 2010. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>IEEE International Workshop on Genomic Signal Processing and Statistics (GENSIPS).Comparative study of GRNs inference methods based on feature selection by mutual information. 2009. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>II Mostra de Projetos Computacionais da UFABC.II Mostra de Projetos Computacionais da UFABC. 2009. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>II Simposio Peruano de Inteligencia Artificial.scriptLattes: Una herramienta para extracción y visualización de conocimiento a partir de Currículos Lattes. 2009. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>III Curso de Verão em Bioinformática - Programa Interunidades em Bioinformática - USP.Reconhecimento de Padrões Aplicado à Bioinformática. 2009. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>III Simposio de Computación Gráfica y Procesamiento de Imágenes (SCGI2009).Base de datos de rostros 3D. 2009. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Reunião dos pesquisadores e técnicos da Agência Paulista de Tecnologia dos Agronegócios (APTA).Programa scriptLattes. 2009. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Seminars of the GSP Laboratory.Gene expression complex networks: synthesis, identification and analysis. 2009. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Seminários Avançados em Tecnologia de Microarrays - Hospital Israelita Albert Einstein. 2009. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Transformações na Comunicação Científica: Identificando necessidades e experimentando tecnologias com grupos de pesquisadores em HIV/Aids.scriptLattes: Uma ferramenta para extração e visualização de conhecimento a partir de Currículos Lattes. 2009. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Workshop STIC AmSud.Intrinsically Multivariate Predictive Genes. 2009. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Workshop STIC-AmSud.Gene regulatory networks inference. 2009. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>X-Meeting. Improving grns inference methods by using Tsallis entropy. 2009. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>XVIII Semana Científica Benjamin Eurico Malucelli.Análise de dados de mycroarray: aspectos gerais. 2009. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>XXII Sibgrapi (Conference on Graphics, Patterns and Images). 2009. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>I Curso de Inverno em Bioinformática - Programa Interunidades em Bioinformática - USP.Modelo para Simulação e Validação de Redes Gênicas. 2008. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>I Escola Brasileira de Bioinformática. 2008. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>IEEE International Workshop on Genomic Signal Processing and Statistics - GENSIPS. Network properties of intrinsically multivariate predictive genes. 2008. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>II Simposio de Computación Gráfica y Procesamiento de Imágenes (SCGI2008).Reconstrucción 3D de rostros: Un abordaje basado en PCA. 2008. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>III Brazilian Symposium on Bioinformatics.AGN Simulation and Validation Model. 2008. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Sun Tech Days. 2008. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>I Simposio de Computación Gráfica y Procesamiento de Imágenes (SCG2007).Active shape models: Una introducción. 2007. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>X-Meeting. 2007. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>14th International Conference on Inteligent Systems for Molecular Biology (ISMB). Probabilistic Genetic Networks Analysis of Three Plasmodium Falciparum Strains from Dynamical Expression Signals. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aplicação Interdisciplinar das Entropias da Informação. 2006. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Encontro dos esudantes de Engenharia de Sistemas.Por representação da EPIS-UNSA no Concurso de Tesis - CLEI 2006. 2006. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>II Congreso sobre ingeniería e investigación cientifica. Identificación de regiones codificantes de proteínas mediante la transformada modificada de Morlet. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>II Congreso sobre ingeniería e investigación cientifica. Reconocimiento de caracteres: un abordaje invariante a translación, rotación y escala. 2006. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>II Simpósio de Iniciação Científica e Pós-Graduação do IME-USP.Projeto de W-operadores para Classificação de Imagens Coloridas. 2006. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>XIX Brazilian Symposium on Computer Graphics and Image Processing (SIBGRAPI). W-operator Window Design for Color Texture Classification. 2006. (Congresso).</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>First International Conference of the Brazilian Association for Bioinformatics and Computational Biology. {Estimation of Probabilistic Genetic Networks of Plasmodium falciparum from Dynamical Expression Signals. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>I Simpósio de Iniciação Científica e Pós-Graduação do IME-USP.Redução de Dimensionalidade Utilizando Entropia Condicional Média Aplicada a Problemas de Bioinformática e Processamento de Imagens. 2005. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SBC 2005. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Sun Tech Days. 2005. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>XVIII Brazilian Conference on Computer Graphics and Image Processing (SIBGRAPI). Redução de Dimensionalidade Utilizando Entropia Condicional Média: Aplicações em Filtragem de Imagens e em Reconhecimento de Texturas. 2005. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>XVIII Brazilian Symposium on Computer Graphics and Image Processing.A RBFN Perceptive Model for Image Thresholding. 2005. (Simpósio).</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Jornada Internacional de Ingeniería de Sistemas.Técnicas de procesamiento de señales para la identificación de genes. 2004. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>XVII Brazilian Symposium on Computer Graphics and Image Processing (SIBGRAPI). W-operator window design by maximization of training data information. 2004. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>XVII Brazilian Symposium on Computer Graphics and Image Processing.A Framework for Automatic Cephalometric Landmarking. 2004. (Simpósio).</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>International Conference on Bioinformatics and Computational Biology (ICoBiCoBi). Dimensionality Reduction for SAGE-based gene identification. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>International Conference on Bioinformatics and Computational Biology (ICoBiCoBi). Genetic Network Architecture Identification by Conditional Entropy Analysis. 2003. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Sun Tech Days. 2003. (Encontro).</td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Second Brazilian Symposium on Mathematical and Computational Biology.From Microarray Images to Biological Knowledge. 2002. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>XV Brazilian Symposium on Computer Graphics and Image Processing.Automatic Gray Level Thresholding based on Relevant Features for Subjective Decisions. 2002. (Simpósio).</td></tr>
+            </table></div>
+                    </table>
+                <br><p>
+<br>Data de processamento: 22/10/2018 11:22:20<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V8.11</a>.         Os resultados estão sujeitos a falhas devido a inconsistências no preenchimento dos CVs Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              

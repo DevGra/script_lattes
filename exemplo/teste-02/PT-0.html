@@ -1,0 +1,387 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Teste 02</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Teste 02</h2></div>
+                
+        <script type="text/javascript" src="./jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({subtitle: {text: ''}, 
+title: {text: 'Total de produção técnica'}, 
+series: [{data: [[2004,
+2],
+[2005,
+2],
+[2006,
+5],
+[2007,
+2],
+[2008,
+3],
+[2009,
+6],
+[2010,
+7],
+[2011,
+6],
+[2012,
+5],
+[2013,
+9],
+[2014,
+5],
+[2015,
+8],
+[2016,
+20],
+[2017,
+15],
+[2018,
+10]], 
+name: 'Total'}], 
+yAxis: {labels: {overflow: 'justify'}, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}, 
+min: 0}, 
+chart: {type: 'column', 
+height: 300}, 
+tooltip: {pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+valueSuffix: '', 
+enabled: true}, 
+credits: {enabled: false}, 
+plotOptions: {column: {stacking: null}, 
+series: {shadow: 'true'}, 
+bar: {dataLabels: {enabled: false}}}, 
+xAxis: {type: 'category', 
+title: {text: ''}}, 
+legend: {layout: 'vertical', 
+align: 'right', 
+enabled: false, 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+verticalAlign: 'middle', 
+shadow: true}});
+        });
+        </script>
+        
+                <h3>Total de produção técnica</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 105<br>
+                    
+                    
+                    <div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>BSB 2018 Program Committee</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=BSB+2018+Program+Committee">busca Google</a> |            <a href="http://www.bing.com/search?q=BSB+2018+Program+Committee">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Membro da Comissão Científica do III Simpósio Norte e Nordeste de Bioinformática</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Membro+da+Comissão+Científica+do+III+Simpósio+Norte+e+Nordeste+de+Bioinformática">busca Google</a> |            <a href="http://www.bing.com/search?q=Membro+da+Comissão+Científica+do+III+Simpósio+Norte+e+Nordeste+de+Bioinformática">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>CBSF - V Congresso Brasileiro de Sistemas Fuzzy (Comitê de Programa)</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CBSF+-+V+Congresso+Brasileiro+de+Sistemas+Fuzzy+(Comitê+de+Programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=CBSF+-+V+Congresso+Brasileiro+de+Sistemas+Fuzzy+(Comitê+de+Programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>BRACIS - 7th Brazilian Conference on Intelligent Systems (Comitê de Programa)</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=BRACIS+-+7th+Brazilian+Conference+on+Intelligent+Systems+(Comitê+de+Programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=BRACIS+-+7th+Brazilian+Conference+on+Intelligent+Systems+(Comitê+de+Programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>ENIAC - Encontro Nacional de Inteligência Artificial e Computacional (Comitê de Programa)</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=ENIAC+-+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(Comitê+de+Programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=ENIAC+-+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(Comitê+de+Programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>CTDIAC - Concurso de Teses e Dissertações de Inteligência Artificial e Computacional (Comitê de programa)</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CTDIAC+-+Concurso+de+Teses+e+Dissertações+de+Inteligência+Artificial+e+Computacional+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=CTDIAC+-+Concurso+de+Teses+e+Dissertações+de+Inteligência+Artificial+e+Computacional+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>MIPR - 1st International Workshop on Multimedia Pragmatics (Comitê de Programa)</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=MIPR+-+1st+International+Workshop+on+Multimedia+Pragmatics+(Comitê+de+Programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=MIPR+-+1st+International+Workshop+on+Multimedia+Pragmatics+(Comitê+de+Programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>ICACIE - 3rd International Conference on Advanced Computing and Intelligent Engineering (Revisor de trabalhos)</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=ICACIE+-+3rd+International+Conference+on+Advanced+Computing+and+Intelligent+Engineering+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=ICACIE+-+3rd+International+Conference+on+Advanced+Computing+and+Intelligent+Engineering+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>6º EBBC - Encontro Brasileiro de Bibliometria e Cientometria (Comitê de programa)</b>. 2018.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=6º+EBBC+-+Encontro+Brasileiro+de+Bibliometria+e+Cientometria+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=6º+EBBC+-+Encontro+Brasileiro+de+Bibliometria+e+Cientometria+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>Recuperação, representação e análise de dados acadêmicos prospectados de fontes brasileiras</b>. 2018. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Recuperação,+representação+e+análise+de+dados+acadêmicos+prospectados+de+fontes+brasileiras">busca Google</a> |            <a href="http://www.bing.com/search?q=Recuperação,+representação+e+análise+de+dados+acadêmicos+prospectados+de+fontes+brasileiras">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>Revisão de artigo no periódico F1000Research</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Revisão+de+artigo+no+periódico+F1000Research">busca Google</a> |            <a href="http://www.bing.com/search?q=Revisão+de+artigo+no+periódico+F1000Research">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Consultor 'ad hoc' na análise de propostas PIBIC/PIBITI - 2017/2018</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Consultor+'ad+hoc'+na+análise+de+propostas+PIBIC/PIBITI+-+2017/2018">busca Google</a> |            <a href="http://www.bing.com/search?q=Consultor+'ad+hoc'+na+análise+de+propostas+PIBIC/PIBITI+-+2017/2018">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOPES, Fabrício M. <b>CISP-BMEI 2017 Technical Program Committee</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CISP-BMEI+2017+Technical+Program+Committee">busca Google</a> |            <a href="http://www.bing.com/search?q=CISP-BMEI+2017+Technical+Program+Committee">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LOPES, Fabrício M. <b>Revisor de trabalhos científicos submetidos à II Escola Gaúcha de Bioinformática - EGB 2017</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Revisor+de+trabalhos+científicos+submetidos+à+II+Escola+Gaúcha+de+Bioinformática+-+EGB+2017">busca Google</a> |            <a href="http://www.bing.com/search?q=Revisor+de+trabalhos+científicos+submetidos+à+II+Escola+Gaúcha+de+Bioinformática+-+EGB+2017">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LOPES, Fabrício M. <b>PSIVT 2017 program committee</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=PSIVT+2017+program+committee">busca Google</a> |            <a href="http://www.bing.com/search?q=PSIVT+2017+program+committee">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>LOPES, Fabrício M. <b>Member of the Scientific Committee for the X-Meeting 2017 - 13th International Conference of the Brazilian Association of Bioinformatics and Computational Biology (AB3C)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Member+of+the+Scientific+Committee+for+the+X-Meeting+2017+-+13th+International+Conference+of+the+Brazilian+Association+of+Bioinformatics+and+Computational+Biology+(AB3C)">busca Google</a> |            <a href="http://www.bing.com/search?q=Member+of+the+Scientific+Committee+for+the+X-Meeting+2017+-+13th+International+Conference+of+the+Brazilian+Association+of+Bioinformatics+and+Computational+Biology+(AB3C)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>CNMAC - XXXVII Congresso Nacional de Matemática Aplicada e Computacional (Revisor de trabalhos)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CNMAC+-+XXXVII+Congresso+Nacional+de+Matemática+Aplicada+e+Computacional+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=CNMAC+-+XXXVII+Congresso+Nacional+de+Matemática+Aplicada+e+Computacional+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>BRACIS - 6th Brazilian Conference on Intelligent Systems (Comitê de Programa)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=BRACIS+-+6th+Brazilian+Conference+on+Intelligent+Systems+(Comitê+de+Programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=BRACIS+-+6th+Brazilian+Conference+on+Intelligent+Systems+(Comitê+de+Programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>ENIAC - Encontro Nacional de Inteligência Artificial e Computacional (Comitê de Programa)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=ENIAC+-+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(Comitê+de+Programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=ENIAC+-+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(Comitê+de+Programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>Workshop de Bioinformática da UTFPR (Revisor de trabalhos)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Workshop+de+Bioinformática+da+UTFPR+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=Workshop+de+Bioinformática+da+UTFPR+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>WPGEC - V Workshop de Pós-Graduação em Engenharia da Computação (Comitê de Programa)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=WPGEC+-+V+Workshop+de+Pós-Graduação+em+Engenharia+da+Computação+(Comitê+de+Programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=WPGEC+-+V+Workshop+de+Pós-Graduação+em+Engenharia+da+Computação+(Comitê+de+Programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>SNMAM 2017 - Track on Social Network and Media Analysis and Mining (Comitê de programa)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=SNMAM+2017+-+Track+on+Social+Network+and+Media+Analysis+and+Mining+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=SNMAM+2017+-+Track+on+Social+Network+and+Media+Analysis+and+Mining+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>SIBGRAPI 2017 - Workshop of Works in Progress (Revisor de trabalhos)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=SIBGRAPI+2017+-+Workshop+of+Works+in+Progress+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=SIBGRAPI+2017+-+Workshop+of+Works+in+Progress+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>ENANCIB 2017 - XVIII Encontro Nacional de Pesquisa em Ciência da Informação (Revisor de trabalhos)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=ENANCIB+2017+-+XVIII+Encontro+Nacional+de+Pesquisa+em+Ciência+da+Informação+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=ENANCIB+2017+-+XVIII+Encontro+Nacional+de+Pesquisa+em+Ciência+da+Informação+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>PSIVT 2017 - The Eighth Pacific-Rim Symposium on Image and Video Technology (revisor de trabalhos)</b>. 2017.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=PSIVT+2017+-+The+Eighth+Pacific-Rim+Symposium+on+Image+and+Video+Technology+(revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=PSIVT+2017+-+The+Eighth+Pacific-Rim+Symposium+on+Image+and+Video+Technology+(revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>Membro de Comitê de Programa do 9th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI 2016)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Membro+de+Comitê+de+Programa+do+9th+International+Congress+on+Image+and+Signal+Processing,+BioMedical+Engineering+and+Informatics+(CISP-BMEI+2016)">busca Google</a> |            <a href="http://www.bing.com/search?q=Membro+de+Comitê+de+Programa+do+9th+International+Congress+on+Image+and+Signal+Processing,+BioMedical+Engineering+and+Informatics+(CISP-BMEI+2016)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Workshop em Bioinformática da UTFPR - 2016</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Workshop+em+Bioinformática+da+UTFPR+-+2016">busca Google</a> |            <a href="http://www.bing.com/search?q=Workshop+em+Bioinformática+da+UTFPR+-+2016">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOPES, Fabrício M. <b>Projeto aprovado no Edital CP 19/2015 Programa de Bolsas de Mestrado Acordo Capes/FA</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Projeto+aprovado+no+Edital+CP+19/2015+Programa+de+Bolsas+de+Mestrado+Acordo+Capes/FA">busca Google</a> |            <a href="http://www.bing.com/search?q=Projeto+aprovado+no+Edital+CP+19/2015+Programa+de+Bolsas+de+Mestrado+Acordo+Capes/FA">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LOPES, Fabrício M. <b>Bioinformática e Inferência de Redes Gênicas</b>. 2016. Curso de curta duração ministrado/Extensão<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Bioinformática+e+Inferência+de+Redes+Gênicas">busca Google</a> |            <a href="http://www.bing.com/search?q=Bioinformática+e+Inferência+de+Redes+Gênicas">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS, DAVID CORREA. <b>WPGEC - IV Workshop de Pós-Graduação em Engenharia da Computação (Comitê de Programa)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=WPGEC+-+IV+Workshop+de+Pós-Graduação+em+Engenharia+da+Computação+(Comitê+de+Programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=WPGEC+-+IV+Workshop+de+Pós-Graduação+em+Engenharia+da+Computação+(Comitê+de+Programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>SIBGRAPI - XXIX Conference on Graphics, Patterns and Images (Revisor de trabalhos)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=SIBGRAPI+-+XXIX+Conference+on+Graphics,+Patterns+and+Images+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=SIBGRAPI+-+XXIX+Conference+on+Graphics,+Patterns+and+Images+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>CBSF - IV Congresso Brasileiro de Sistemas Fuzzy (Comitê de programa)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CBSF+-+IV+Congresso+Brasileiro+de+Sistemas+Fuzzy+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=CBSF+-+IV+Congresso+Brasileiro+de+Sistemas+Fuzzy+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>ENIAC - Encontro Nacional de Inteligência Artificial e Computacional (Comitê de programa)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=ENIAC+-+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=ENIAC+-+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>CTDIAC - Concurso de Teses e Dissertações de Inteligência Artificial e Computacional (Comitê de programa)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CTDIAC+-+Concurso+de+Teses+e+Dissertações+de+Inteligência+Artificial+e+Computacional+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=CTDIAC+-+Concurso+de+Teses+e+Dissertações+de+Inteligência+Artificial+e+Computacional+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARTINS-JR, DAVID CORREA. <b>IX Simpósio de Iniciação Científica da UFABC (Revisor de trabalhos)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=IX+Simpósio+de+Iniciação+Científica+da+UFABC+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=IX+Simpósio+de+Iniciação+Científica+da+UFABC+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>The use of bioinformatics in the study of complex diseases. 2016. (Programa de rádio ou</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=The+use+of+bioinformatics+in+the+study+of+complex+diseases.+2016.+(Programa+de+rádio+ou">busca Google</a> |            <a href="http://www.bing.com/search?q=The+use+of+bioinformatics+in+the+study+of+complex+diseases.+2016.+(Programa+de+rádio+ou">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>CIARP 2016 - 21st IberoAmerican Congress on Pattern Recognition (Comitê de programa)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CIARP+2016+-+21st+IberoAmerican+Congress+on+Pattern+Recognition+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=CIARP+2016+-+21st+IberoAmerican+Congress+on+Pattern+Recognition+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>5º EBBC - Encontro Brasileiro de Bibliometria e Cientometria (Comitê de programa)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=5º+EBBC+-+Encontro+Brasileiro+de+Bibliometria+e+Cientometria+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=5º+EBBC+-+Encontro+Brasileiro+de+Bibliometria+e+Cientometria+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>IV Fourth Brazilian Conference on Fuzzy Systems (Revisor de trabalhos)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=IV+Fourth+Brazilian+Conference+on+Fuzzy+Systems+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=IV+Fourth+Brazilian+Conference+on+Fuzzy+Systems+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>SIBGRAPI 2016 - Workshop of Works in Progress (Revisor de trabalhos)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=SIBGRAPI+2016+-+Workshop+of+Works+in+Progress+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=SIBGRAPI+2016+-+Workshop+of+Works+in+Progress+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>XV Congresso Brasileiro de Informática em Saúde - CBIS (Revisor de trabalhos)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=XV+Congresso+Brasileiro+de+Informática+em+Saúde+-+CBIS+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=XV+Congresso+Brasileiro+de+Informática+em+Saúde+-+CBIS+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>XVII Encontro Nacional de Pesquisa em Pós-Graduação em Ciência da Informação (Revisor de trabalhos)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=XVII+Encontro+Nacional+de+Pesquisa+em+Pós-Graduação+em+Ciência+da+Informação+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=XVII+Encontro+Nacional+de+Pesquisa+em+Pós-Graduação+em+Ciência+da+Informação+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>XXXVI Congresso Nacional de Matemática Aplicada e Computacional - CNMAC2016 (Comitê de programa)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=XXXVI+Congresso+Nacional+de+Matemática+Aplicada+e+Computacional+-+CNMAC2016+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=XXXVI+Congresso+Nacional+de+Matemática+Aplicada+e+Computacional+-+CNMAC2016+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>Seminário em Tecnologia da Informação Inteligente SeTII (Revisor de trabalhos)</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Seminário+em+Tecnologia+da+Informação+Inteligente+SeTII+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=Seminário+em+Tecnologia+da+Informação+Inteligente+SeTII+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>Não sou um robô. 2016. (Programa de rádio ou</b>. 2016.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Não+sou+um+robô.+2016.+(Programa+de+rádio+ou">busca Google</a> |            <a href="http://www.bing.com/search?q=Não+sou+um+robô.+2016.+(Programa+de+rádio+ou">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>Membro da comissão científica do IV Simpósio Paranaense de Engenharia Mecânica (SIPEM)</b>. 2015.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Membro+da+comissão+científica+do+IV+Simpósio+Paranaense+de+Engenharia+Mecânica+(SIPEM)">busca Google</a> |            <a href="http://www.bing.com/search?q=Membro+da+comissão+científica+do+IV+Simpósio+Paranaense+de+Engenharia+Mecânica+(SIPEM)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Revisor do 12th MCBIOS Conference Proceedings</b>. 2015.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Revisor+do+12th+MCBIOS+Conference+Proceedings">busca Google</a> |            <a href="http://www.bing.com/search?q=Revisor+do+12th+MCBIOS+Conference+Proceedings">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOPES, Fabrício M. <b>Revisor do 2nd Latin American Congress on Computational Intelligence</b>. 2015.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Revisor+do+2nd+Latin+American+Congress+on+Computational+Intelligence">busca Google</a> |            <a href="http://www.bing.com/search?q=Revisor+do+2nd+Latin+American+Congress+on+Computational+Intelligence">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LOPES, Fabrício M. <b>Revisor do 2015 IEEE International Conference on Electronics, Circuits, and Systems</b>. 2015.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Revisor+do+2015+IEEE+International+Conference+on+Electronics,+Circuits,+and+Systems">busca Google</a> |            <a href="http://www.bing.com/search?q=Revisor+do+2015+IEEE+International+Conference+on+Electronics,+Circuits,+and+Systems">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LOPES, Fabrício M. <b>Relatório Parcial - Edital 24/2012 - Programa de Pesquisa Básica e Aplicada</b>. 2015. Relatório de pesquisa<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Relatório+Parcial+-+Edital+24/2012+-+Programa+de+Pesquisa+Básica+e+Aplicada">busca Google</a> |            <a href="http://www.bing.com/search?q=Relatório+Parcial+-+Edital+24/2012+-+Programa+de+Pesquisa+Básica+e+Aplicada">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>LOPES, Fabrício M. <b>Relatório Final - Edital Universal 14/2012 - Faixa A</b>. 2015. Relatório de pesquisa<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Relatório+Final+-+Edital+Universal+14/2012+-+Faixa+A">busca Google</a> |            <a href="http://www.bing.com/search?q=Relatório+Final+-+Edital+Universal+14/2012+-+Faixa+A">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>LOPES, Fabrício M. <b>Relatório Parcial - Edital 21/2012 - Programa de Bolsas de Produtividade em Pesquisa e Desenvolvimento Tecnológico</b>. 2015. Relatório de pesquisa<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Relatório+Parcial+-+Edital+21/2012+-+Programa+de+Bolsas+de+Produtividade+em+Pesquisa+e+Desenvolvimento+Tecnológico">busca Google</a> |            <a href="http://www.bing.com/search?q=Relatório+Parcial+-+Edital+21/2012+-+Programa+de+Bolsas+de+Produtividade+em+Pesquisa+e+Desenvolvimento+Tecnológico">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>Brazilian Conference on Intelligent Systems (BRACIS) and Encontro Nacional de Inteligência Artificial e Computacional (ENIAC) (Comitê de programa(</b>. 2015.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Brazilian+Conference+on+Intelligent+Systems+(BRACIS)+and+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(ENIAC)+(Comitê+de+programa(">busca Google</a> |            <a href="http://www.bing.com/search?q=Brazilian+Conference+on+Intelligent+Systems+(BRACIS)+and+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(ENIAC)+(Comitê+de+programa(">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CONQUE, Bruno M. M. ; KASHIWABARA, André Y. ; LOPES, Fabrício M.. <b>Feature extraction from complex networks: A case of study in genomic sequences classification</b>. 2014.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Feature+extraction+from+complex+networks:+A+case+of+study+in+genomic+sequences+classification">busca Google</a> |            <a href="http://www.bing.com/search?q=Feature+extraction+from+complex+networks:+A+case+of+study+in+genomic+sequences+classification">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Revisor do 2014 IEEE International Workshop on Genomic Signal Processing and Statistics (GENSIPS 2014)</b>. 2014.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Revisor+do+2014+IEEE+International+Workshop+on+Genomic+Signal+Processing+and+Statistics+(GENSIPS+2014)">busca Google</a> |            <a href="http://www.bing.com/search?q=Revisor+do+2014+IEEE+International+Workshop+on+Genomic+Signal+Processing+and+Statistics+(GENSIPS+2014)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOPES, Fabrício M. <b>Relatório Parcial - Edital 24/2012 - Programa de Pesquisa Básica e Aplicada</b>. 2014. Relatório de pesquisa<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Relatório+Parcial+-+Edital+24/2012+-+Programa+de+Pesquisa+Básica+e+Aplicada">busca Google</a> |            <a href="http://www.bing.com/search?q=Relatório+Parcial+-+Edital+24/2012+-+Programa+de+Pesquisa+Básica+e+Aplicada">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>Brazilian Conference on Intelligent Systems (BRACIS) and Encontro Nacional de Inteligência Artificial e Computacional (ENIAC) (Comitê de programa)</b>. 2014.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Brazilian+Conference+on+Intelligent+Systems+(BRACIS)+and+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(ENIAC)+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=Brazilian+Conference+on+Intelligent+Systems+(BRACIS)+and+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(ENIAC)+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>III Congresso Brasileiro de Sistemas Fuzzy (Comitê de programa)</b>. 2014.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=III+Congresso+Brasileiro+de+Sistemas+Fuzzy+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=III+Congresso+Brasileiro+de+Sistemas+Fuzzy+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>Revisor do X-meeting BMC Genomics paper track</b>. 2013.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Revisor+do+X-meeting+BMC+Genomics+paper+track">busca Google</a> |            <a href="http://www.bing.com/search?q=Revisor+do+X-meeting+BMC+Genomics+paper+track">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Membro do comitê de programa do 11th Brazilian Congress (CBIC) on Computational Intelligence - Computational Intelligence in Bioinformatics Symposium (CIBS)</b>. 2013.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Membro+do+comitê+de+programa+do+11th+Brazilian+Congress+(CBIC)+on+Computational+Intelligence+-+Computational+Intelligence+in+Bioinformatics+Symposium+(CIBS)">busca Google</a> |            <a href="http://www.bing.com/search?q=Membro+do+comitê+de+programa+do+11th+Brazilian+Congress+(CBIC)+on+Computational+Intelligence+-+Computational+Intelligence+in+Bioinformatics+Symposium+(CIBS)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOPES, Fabrício M. <b>Revisor do 2013 IEEE International Workshop on Genomic Signal Processing and Statistics (GENSIPS 2013)</b>. 2013.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Revisor+do+2013+IEEE+International+Workshop+on+Genomic+Signal+Processing+and+Statistics+(GENSIPS+2013)">busca Google</a> |            <a href="http://www.bing.com/search?q=Revisor+do+2013+IEEE+International+Workshop+on+Genomic+Signal+Processing+and+Statistics+(GENSIPS+2013)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LOPES, Fabrício M. <b>Linguagem de Programação Java II</b>. 2013. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Linguagem+de+Programação+Java+II">busca Google</a> |            <a href="http://www.bing.com/search?q=Linguagem+de+Programação+Java+II">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LOPES, Fabrício M. <b>Reconhecimentos de Padrões</b>. 2013. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Reconhecimentos+de+Padrões">busca Google</a> |            <a href="http://www.bing.com/search?q=Reconhecimentos+de+Padrões">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>1st BRICS Countries Congress (BRICS-CCI) and 11th Brazilian Congress (CBIC) on Computational Intelligence (Revisor de trabalhos)</b>. 2013.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=1st+BRICS+Countries+Congress+(BRICS-CCI)+and+11th+Brazilian+Congress+(CBIC)+on+Computational+Intelligence+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=1st+BRICS+Countries+Congress+(BRICS-CCI)+and+11th+Brazilian+Congress+(CBIC)+on+Computational+Intelligence+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>SEMISH - 40th Seminar on Hardware and Software (Revisor de trabalhos)</b>. 2013.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=SEMISH+-+40th+Seminar+on+Hardware+and+Software+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=SEMISH+-+40th+Seminar+on+Hardware+and+Software+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>X Encontro Nacional de Inteligência Artificial e Computacional (ENIAC) (Comitê de programa)</b>. 2013.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=X+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(ENIAC)+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=X+Encontro+Nacional+de+Inteligência+Artificial+e+Computacional+(ENIAC)+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>VI Simpósio de Iniciação Científica da UFABC (Avaliador do evento)</b>. 2013.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=VI+Simpósio+de+Iniciação+Científica+da+UFABC+(Avaliador+do+evento)">busca Google</a> |            <a href="http://www.bing.com/search?q=VI+Simpósio+de+Iniciação+Científica+da+UFABC+(Avaliador+do+evento)">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>Introdução a bioinformática e aplicações envolvendo reconhecimento de padrões</b>. 2012. Curso de curta duração ministrado/Outra<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Introdução+a+bioinformática+e+aplicações+envolvendo+reconhecimento+de+padrões">busca Google</a> |            <a href="http://www.bing.com/search?q=Introdução+a+bioinformática+e+aplicações+envolvendo+reconhecimento+de+padrões">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Linguagem de Programação Java II</b>. 2012. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Linguagem+de+Programação+Java+II">busca Google</a> |            <a href="http://www.bing.com/search?q=Linguagem+de+Programação+Java+II">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>II Congresso Brasileiro de Sistemas Fuzzy (Comitê de programa)</b>. 2012.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=II+Congresso+Brasileiro+de+Sistemas+Fuzzy+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=II+Congresso+Brasileiro+de+Sistemas+Fuzzy+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>ENIA - IX Encontro Nacional de Inteligência Artificial (Comitê de programa)</b>. 2012.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=ENIA+-+IX+Encontro+Nacional+de+Inteligência+Artificial+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=ENIA+-+IX+Encontro+Nacional+de+Inteligência+Artificial+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>Brazilian Symposium on Neural Networks (Comitê de programa)</b>. 2012.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Brazilian+Symposium+on+Neural+Networks+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=Brazilian+Symposium+on+Neural+Networks+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>Linguagem de Programação Java II</b>. 2011. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Linguagem+de+Programação+Java+II">busca Google</a> |            <a href="http://www.bing.com/search?q=Linguagem+de+Programação+Java+II">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>24th Australasian Joint Conference on Artificial Intelligence (AI2011)</b>. 2011. Revisão de artigo<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=24th+Australasian+Joint+Conference+on+Artificial+Intelligence+(AI2011)">busca Google</a> |            <a href="http://www.bing.com/search?q=24th+Australasian+Joint+Conference+on+Artificial+Intelligence+(AI2011)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOPES, Fabrício M.; MARTINS JR, David C. ; BARRERA, Junior ; CESAR JR, Roberto M.. <b>An iterative feature selection method for GRNs inference by exploring topological properties</b>. 2011.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=An+iterative+feature+selection+method+for+GRNs+inference+by+exploring+topological+properties">busca Google</a> |            <a href="http://www.bing.com/search?q=An+iterative+feature+selection+method+for+GRNs+inference+by+exploring+topological+properties">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>Brazilian Symposium on Bioinformatics (Revisor de trabalhos)</b>. 2011.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Brazilian+Symposium+on+Bioinformatics+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=Brazilian+Symposium+on+Bioinformatics+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>ENIA - VIII Encontro Nacional de Inteligência Artificial (Comitê de programa)</b>. 2011.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=ENIA+-+VIII+Encontro+Nacional+de+Inteligência+Artificial+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=ENIA+-+VIII+Encontro+Nacional+de+Inteligência+Artificial+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>Análise de dados acadêmicos da Plataforma Lattes por meio do scriptLattes</b>. 2011. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Análise+de+dados+acadêmicos+da+Plataforma+Lattes+por+meio+do+scriptLattes">busca Google</a> |            <a href="http://www.bing.com/search?q=Análise+de+dados+acadêmicos+da+Plataforma+Lattes+por+meio+do+scriptLattes">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M.; CESAR JR, Roberto M.. <b>23rd IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</b>. 2010. Revisão de artigo<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=23rd+IEEE+Conference+on+Computer+Vision+and+Pattern+Recognition+(CVPR)">busca Google</a> |            <a href="http://www.bing.com/search?q=23rd+IEEE+Conference+on+Computer+Vision+and+Pattern+Recognition+(CVPR)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M.; CESAR JR, Roberto M.. <b>17th IEEE International Conference on Image Processing (ICIP)</b>. 2010. Revisão de artigo<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=17th+IEEE+International+Conference+on+Image+Processing+(ICIP)">busca Google</a> |            <a href="http://www.bing.com/search?q=17th+IEEE+International+Conference+on+Image+Processing+(ICIP)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOPES, Fabrício M.; MARTINS JR, David C.. <b>15th Iberoamerican Congress on Pattern Recognition (CIARP)</b>. 2010. Revisão de artigos<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=15th+Iberoamerican+Congress+on+Pattern+Recognition+(CIARP)">busca Google</a> |            <a href="http://www.bing.com/search?q=15th+Iberoamerican+Congress+on+Pattern+Recognition+(CIARP)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MACEDO, M. M. G. ; MENA-CHALCO, J. P. ; MEKKAOUI, C. ; JACKOWSKI, M. P.. <b>Blood vessel tracking in MRA images - Technical Video - SIBGRAPI 2010</b>. 2010.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Blood+vessel+tracking+in+MRA+images+-+Technical+Video+-+SIBGRAPI+2010">busca Google</a> |            <a href="http://www.bing.com/search?q=Blood+vessel+tracking+in+MRA+images+-+Technical+Video+-+SIBGRAPI+2010">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS JR, David Corrêa; CESAR JR, Roberto Marcondes. <b>Genes escolhidos. 2010. (Programa de rádio ou</b>. 2010.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Genes+escolhidos.+2010.+(Programa+de+rádio+ou">busca Google</a> |            <a href="http://www.bing.com/search?q=Genes+escolhidos.+2010.+(Programa+de+rádio+ou">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>AB3C X-meeting (Revisor de trabalhos)</b>. 2010.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=AB3C+X-meeting+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=AB3C+X-meeting+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>CIARP - 15th Iberoamerican Congress on Pattern Recognition (Comitê de programa)</b>. 2010.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CIARP+-+15th+Iberoamerican+Congress+on+Pattern+Recognition+(Comitê+de+programa)">busca Google</a> |            <a href="http://www.bing.com/search?q=CIARP+-+15th+Iberoamerican+Congress+on+Pattern+Recognition+(Comitê+de+programa)">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M.; BITAR, Mainá. <b>BioInfoNews. 2009; Tema: Canal de comunicação de estudantes e pesquisadores na área de bioinformática</b>. 2009.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=BioInfoNews.+2009;+Tema:+Canal+de+comunicação+de+estudantes+e+pesquisadores+na+área+de+bioinformática">busca Google</a> |            <a href="http://www.bing.com/search?q=BioInfoNews.+2009;+Tema:+Canal+de+comunicação+de+estudantes+e+pesquisadores+na+área+de+bioinformática">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M.; HASHIMOTO, Ronaldo F.. <b>4th Brazilian Symposium on Bioinformatics (BSB)</b>. 2009. Revisão de artigo<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=4th+Brazilian+Symposium+on+Bioinformatics+(BSB)">busca Google</a> |            <a href="http://www.bing.com/search?q=4th+Brazilian+Symposium+on+Bioinformatics+(BSB)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>SIBGRAPI - XXII Brazilian Symposium on Computar Graphics and Image Processing (Revisor de trabalhos)</b>. 2009.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=SIBGRAPI+-+XXII+Brazilian+Symposium+on+Computar+Graphics+and+Image+Processing+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=SIBGRAPI+-+XXII+Brazilian+Symposium+on+Computar+Graphics+and+Image+Processing+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>ICIP - IEEE International Conference on Image Processing (Revisor de trabalhos)</b>. 2009.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=ICIP+-+IEEE+International+Conference+on+Image+Processing+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=ICIP+-+IEEE+International+Conference+on+Image+Processing+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>CNMAC - 32º Congresso Nacional de Matemática Aplicada e Computacional (Revisor de trabalhos)</b>. 2009.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=CNMAC+-+32º+Congresso+Nacional+de+Matemática+Aplicada+e+Computacional+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=CNMAC+-+32º+Congresso+Nacional+de+Matemática+Aplicada+e+Computacional+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>Capacitação na utilização e adaptação de script de compilação e visualização de informações extraídas de CVs Lattes</b>. 2009. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Capacitação+na+utilização+e+adaptação+de+script+de+compilação+e+visualização+de+informações+extraídas+de+CVs+Lattes">busca Google</a> |            <a href="http://www.bing.com/search?q=Capacitação+na+utilização+e+adaptação+de+script+de+compilação+e+visualização+de+informações+extraídas+de+CVs+Lattes">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M.; CESAR JR, Roberto M.. <b>15th IEEE International Conference on Image Processing (ICIP)</b>. 2008. Revisão de artigos<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=15th+IEEE+International+Conference+on+Image+Processing+(ICIP)">busca Google</a> |            <a href="http://www.bing.com/search?q=15th+IEEE+International+Conference+on+Image+Processing+(ICIP)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M.; MARTINS JR, David C. ; CESAR JR, Roberto M.. <b>DimReduction - Interactive Graphic Environment for Dimensionality Reduction</b>. 2008.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=DimReduction+-+Interactive+Graphic+Environment+for+Dimensionality+Reduction">busca Google</a> |            <a href="http://www.bing.com/search?q=DimReduction+-+Interactive+Graphic+Environment+for+Dimensionality+Reduction">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>AB3C X-meeting (Revisor de trabalhos)</b>. 2008.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=AB3C+X-meeting+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=AB3C+X-meeting+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M.; CESAR JR, Roberto M.. <b>3rd X-Meeting</b>. 2007. Revisão de artigo<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=3rd+X-Meeting">busca Google</a> |            <a href="http://www.bing.com/search?q=3rd+X-Meeting">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MENA-CHALCO, J. P. <b>Padrão LaTeX de tese/dissertação aprovada pela CPG - IME - USP</b>. 2007. Desenvolvimento de material didático ou instrucional - Formato padrão de teses/dissertações<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Padrão+LaTeX+de+tese/dissertação+aprovada+pela+CPG+-+IME+-+USP">busca Google</a> |            <a href="http://www.bing.com/search?q=Padrão+LaTeX+de+tese/dissertação+aprovada+pela+CPG+-+IME+-+USP">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>Ferramentas de Programação Java</b>. 2006. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Ferramentas+de+Programação+Java">busca Google</a> |            <a href="http://www.bing.com/search?q=Ferramentas+de+Programação+Java">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Informática Aplicada</b>. 2006. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Informática+Aplicada">busca Google</a> |            <a href="http://www.bing.com/search?q=Informática+Aplicada">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOPES, Fabrício M. <b>I Jornada Nacional da Produção Científica em Educação Profissional e Tecnológica</b>. 2006. Revisão de artigo<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=I+Jornada+Nacional+da+Produção+Científica+em+Educação+Profissional+e+Tecnológica">busca Google</a> |            <a href="http://www.bing.com/search?q=I+Jornada+Nacional+da+Produção+Científica+em+Educação+Profissional+e+Tecnológica">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>SIBGRAPI - XIX Brazilian Symposium on Computer Graphics and Image Processing (Revisor de trabalhos)</b>. 2006.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=SIBGRAPI+-+XIX+Brazilian+Symposium+on+Computer+Graphics+and+Image+Processing+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=SIBGRAPI+-+XIX+Brazilian+Symposium+on+Computer+Graphics+and+Image+Processing+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>British Machine Vision Computing (Revisor de trabalhos)</b>. 2006.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=British+Machine+Vision+Computing+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=British+Machine+Vision+Computing+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LOPES, Fabrício M. <b>Informática Aplicada</b>. 2005. Curso de curta duração ministrado/Especialização<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Informática+Aplicada">busca Google</a> |            <a href="http://www.bing.com/search?q=Informática+Aplicada">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MARTINS-JR, David Corrêa. <b>SIBGRAPI - XVIII Brazilian Symposium on Computer Graphics and Image Processing (Revisor de trabalhos)</b>. 2005.<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=SIBGRAPI+-+XVIII+Brazilian+Symposium+on+Computer+Graphics+and+Image+Processing+(Revisor+de+trabalhos)">busca Google</a> |            <a href="http://www.bing.com/search?q=SIBGRAPI+-+XVIII+Brazilian+Symposium+on+Computer+Graphics+and+Image+Processing+(Revisor+de+trabalhos)">busca Bing</a> ]          </font><br></td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CUADROS-VARGAS, E. ; SIMÃO, A. S. ; PAZ-TRILLO, C. ; MENA-CHALCO, J. P.. <b>II Conferencia Internacional de la Sociedad Peruana de Computación SPC2004</b>. 2004. Editoração/Anais<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=II+Conferencia+Internacional+de+la+Sociedad+Peruana+de+Computación+SPC2004">busca Google</a> |            <a href="http://www.bing.com/search?q=II+Conferencia+Internacional+de+la+Sociedad+Peruana+de+Computación+SPC2004">busca Bing</a> ]          </font><br></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LOPES, Fabrício M. <b>Linguagem de Programação Delphi</b>. 2004. Curso de curta duração ministrado/Extensão<br>         <font size=-1>          [ <a href="http://www.google.com/search?btnG=Google+Search&q=Linguagem+de+Programação+Delphi">busca Google</a> |            <a href="http://www.bing.com/search?q=Linguagem+de+Programação+Delphi">busca Bing</a> ]          </font><br></td></tr>
+            </table></div>
+                    </table>
+                <br><p>
+<br>Data de processamento: 22/10/2018 11:22:20<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V8.11</a>.         Os resultados estão sujeitos a falhas devido a inconsistências no preenchimento dos CVs Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> <script type="text/javascript">            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));            </script>            <script type="text/javascript">            try {              var pageTracker = _gat._getTracker("UA-5266248-1");              pageTracker._trackPageview();            } catch(err) {}            </script></body></html>
+              
